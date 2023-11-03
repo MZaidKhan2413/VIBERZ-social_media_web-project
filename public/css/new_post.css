@@ -1,0 +1,118 @@
+body {
+    outline: none;
+    border: none;
+}
+
+.input_section {
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.image_section {
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: .5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_section img {
+    height: 18rem;
+    width: 18rem;
+    border-radius: .5rem;
+    object-fit: contain;
+}
+
+.fa-file-image{
+    font-size: 5rem;
+    position: absolute;
+    z-index: 999;
+}
+
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.form_section label{
+    display: block;
+    background-color: #FF4C29;
+    padding: .5rem;
+    border-radius: .85rem;
+
+    margin-bottom: 2rem;
+}
+
+.form_section input {
+    display: none;
+}
+
+.form_section textarea {
+    resize: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 2px solid #FF4C29;
+    padding: 0 .5rem;
+    /* margin: 1rem 0; */
+}
+
+.form_section textarea:focus{
+    outline: none;
+}
+
+.form_section textarea {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.form_section textarea::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.upload_btn {
+    background-color: #FF4C29;
+    color: #fff;
+    font-weight: 500;
+    padding: .25rem .5rem;
+    border: none;
+    border-radius: .85rem;
+    margin-top: 2rem;
+}
+
+/* =========================================
+            MEDIA QUERIES
+============================================ */
+
+@media (max-width: 655px) {
+    .post_section {
+        font-size: 1.75rem;
+    }
+
+    .image_section img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .form_section label {
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .upload_btn {
+        margin-top: 3rem;
+    }
+}

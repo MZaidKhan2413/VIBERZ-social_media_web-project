@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("includes/head.ejs") %>
+    <link rel="stylesheet" href="/css/my_posts.css">
+</head>
+<body>
+    <header>
+        <%- include("includes/header.ejs") %>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <span>Welcome @<%= user %></span>
+        </div>
+        <hr>
+        <div class="container all_posts">
+            <% for(post of posts) { %>
+                <div class="post">
+                    <div class="picture"><img src="data:image/png;base64,<%= post.image %>" alt="some image"></div>
+                    <div class="content">
+                        <span><%= post.content %></span><br>
+                        <a href="/home/<%= post.id %>/details">DETAILS</a>
+                        <a href="/home/my_posts/<%= post.id %>/edit">EDIT</a>
+                        <form method="post" action="/home/my_posts/<%= post.id %>?_method=DELETE" style="display: inline;">
+                            <button>DELETE</button>
+                        </form>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </main>
+    
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "socialz",
+  "version": "1.0.0",
+  "description": "SocialZ is a social media platfrom like instagram, facebook, etc that is made to upskill my web developmenet knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mohammad Zaid Khan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.2",
+    "uuid": "^9.0.1"
+  }
+}

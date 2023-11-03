@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("includes/head.ejs") %>
+    <link rel="stylesheet" href="/css/new_post.css">
+</head>
+<body>
+    <header>
+        <%- include("includes/header.ejs") %>
+    </header>
+
+    <main>
+        <div class="container-xl post_section">
+            <div class="input_section">
+                <div class="image_section">
+                    <img src="https://w0.peakpx.com/wallpaper/180/958/HD-wallpaper-black-plain.jpg"
+                        alt="Nothing Uploaded" id="source_image">
+                        <i class="fa-regular fa-file-image" id="image_icon"></i>
+                </div>
+
+                <form method="post" action="/home/my_posts" enctype="multipart/form-data" class="form_section">
+                    <label for="image">Add Image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" name="image" id="image">
+                    <textarea name="content" id="content" cols="30" rows="1" placeholder="Caption"></textarea>
+                    <button class="upload_btn">Upload</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs") %>
+    
+    <script src="/js/new_post.js"></script>
+</body>
+</html>

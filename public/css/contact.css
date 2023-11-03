@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    color: #ffffffe5;
+    font-family: 'Playpen Sans', cursive;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #082032;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_us_section {
+    background-color: #00071d;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px #0000005e;
+    overflow: hidden;
+    width: 40rem;
+    height: 25rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.form_section {
+    width: 50%;
+    margin-right: 1rem;
+}
+
+.form_section form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.form_section textarea, .form_section input {
+    background-color: transparent;
+    border: 2px solid #FF4C29;
+    
+    border-radius: 1rem;
+    padding: .75rem;
+    margin: .25rem 0;
+}
+.form_section textarea:focus, .form_section input:focus {
+    outline: 1.5px solid #ff2a00;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+.form_section textarea {
+    resize: none;
+    overflow: scroll;
+}
+.form_section textarea {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.form_section textarea::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+::placeholder {
+    color: #ffffffe5;
+}
+
+.submit_contact {
+    background-color: #FF4C29;
+    height: 2.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.submit_contact:hover {
+    background-color: #ff2a00;
+}
+.submit_contact:active {
+    background-color: transparent;
+    color: #FF4C29;
+    border: 2px solid #FF4C29;
+}
+
+.non_form_section {
+    width: 50%;
+    margin-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.non_form_section img {
+    width: 14rem;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #000000cb;
+}
+.non_form_section h3 {
+    margin-top: .5rem;
+}
+
+/* ===========================================
+                Media Queries
+============================================== */
+
+@media (max-width: 740px) {
+    html {
+        font-size: 80%;
+    }
+
+    .contact_us_section {
+        padding: 0 2rem;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_section, .non_form_section {
+        padding: 1rem 0;
+        margin: 0;
+        margin-bottom: 1rem;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

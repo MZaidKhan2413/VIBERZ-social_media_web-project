@@ -1,0 +1,15 @@
+.about_section {
+    /* background-color: aliceblue; */
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.about_section h2 {
+    color: #FF4C29;
+}
+
+.about_section p {
+    color: #ffffffe5;
+}

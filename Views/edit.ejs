@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("includes/head.ejs") %>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+    <header>
+        <%- include("includes/header.ejs") %>
+    </header>
+
+    <main>
+        <div class="container-xl">
+            <div class="hero">
+                <div class="editable_post">
+                    <form method="post" action="/home/my_posts/<%= post.id %>?_method=PATCH" class="edit_form">
+                        <textarea name="content" id="content" cols="30" rows="1""><%= post.content %></textarea>
+                        <br>
+                        <button class="update_btn">Update</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

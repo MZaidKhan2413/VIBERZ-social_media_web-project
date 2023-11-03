@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #082032;
+    display: flex;
+    flex-direction: column;
+}
+
+ol, ul {
+    margin: 0px;
+    padding: 0px;
+}
+h3 {
+    margin: 0px;
+}
+
+/* ==========================================
+            Head part
+============================================== */
+
+.socialz_nav {
+    background-color: #202936;
+    color: #FF4C29;
+
+    font-weight: 600;
+    height: 3rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: .25rem 0;
+    border-bottom: #000 .1rem solid;
+    box-shadow: 20px 0px 15px #000;
+}
+
+.logo {
+    background-color: #FF4C29;
+    color: #000;
+
+    height: 3rem;
+    padding-left: 3rem;
+    padding-right: .75rem;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    cursor:pointer;
+    border-bottom: #000 .125rem solid;
+}
+.logo span {
+    margin: 0 .5rem;
+}
+.logo img {
+    width: 2.3rem;
+    border-radius: .2rem;
+}
+.nav_opts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #000 .125rem solid;
+}
+
+.nav_opts span {
+    margin: 0 1.5rem;
+    cursor:pointer;
+}
+
+.nav_opts ul {
+    background-color: #FF4C29;
+    height: 3rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+.nav_opts ul li {
+    margin: 0 1rem;
+}
+
+.nav_opts a {
+    text-decoration: none;
+    color: #000;
+}
+.nav_opts a:hover {
+    color: #202020;
+}
+.nav_opts a:active {
+    color:#fff
+}
+
+/* ==========================================
+            Main part
+============================================== */
+
+.all_posts {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.post {
+    width: 25rem;
+    background-color: #0c2335;
+    /* background-color: #061a2a; */
+    border: #000 1.5px solid;
+    margin: .5rem .5rem;
+    border-radius: .5rem; 
+    box-shadow: 0rem .4rem 1.875rem #1e405997;
+}
+
+.user {
+    color: #fff;
+    background-color: #061a2a;
+    font-size: 1rem;
+    font-style: italic;
+    padding: .25rem .75rem;
+    border-bottom: #000 solid .02rem;
+    position: relative;
+    top: 0%;
+}
+
+.picture {
+    height: 25rem;
+    width: 25rem;
+    background-color: transparent;
+} 
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-bottom: #000 solid .02rem;
+}
+
+.content {
+    color: #fff;
+    background-color: #061a2a;
+    height: 4.4rem;
+    padding: .5rem;
+    text-align: left;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.content > span {
+    height: 1.5rem;
+    font-size: .9rem;
+    display: inline-block;
+    overflow: hidden;
+}
+.content a {
+    text-decoration: none;
+    color: #FF4C29;
+    font-weight: 600;
+    font-size: .85rem;
+    position: relative;
+    bottom: 0% ;
+}
+
+/* ==========================================
+            FooT part
+============================================== */
+
+footer {
+    background-color: #202936;
+    margin-top: auto;
+}
+.socialz_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    color: #b9b9b9;
+    padding: .25rem;
+}
+
+/* ==========================================
+            MEDIA QUERIES
+============================================== */
+
+@media screen and (max-width: 1200px) {
+    .all_posts {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post, .picture {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    html {
+        font-size: 60%;
+    }
+}

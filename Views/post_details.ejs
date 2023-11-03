@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("includes/head.ejs") %>
+    <link rel="stylesheet" href="/css/post_details.css">
+</head>
+<body>
+    <header>
+        <%- include("includes/header.ejs") %>
+    </header>
+
+    <main>
+        <div class="post_details">
+            <div class="post_display">
+                <div class="image_view">
+                    <img src="data:image/png;base64,<%= post.image %>" alt="post">
+                </div>
+                <hr id="seperator">
+                <div class="content_view">
+                    <h4 class="post_caption" id="post_caption">Description</h4>
+                    <%= post.content %>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>
