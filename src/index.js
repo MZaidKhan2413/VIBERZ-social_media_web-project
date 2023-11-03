@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     database: 'viberz',
-    password: 'MySql@2023!zj'
+    password: ''
 });
 
 app.use(methodOverride('_method'));
